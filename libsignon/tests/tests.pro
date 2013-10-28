@@ -20,4 +20,3 @@ system($$QMAKE_COPY testsession.conf.in $${TOP_BUILD_DIR}/tests/testsession.conf
 
 QMAKE_DISTCLEAN += \
     testsession.conf
->>>>>>> e6a428a55be521920d8ace02de658893f9c756e5
