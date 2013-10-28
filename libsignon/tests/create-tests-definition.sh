@@ -104,11 +104,6 @@ cat <<END
 `generate_test_set libsignon-qt-tests/libsignon-qt-tests \
     "SSO API" "Functional" "Component" "single-case"`
 
-`${HAVE_AEGIS} || echo "    <!-- AEGIS not available on this platform"`
-`generate_test_set libsignon-qt-tests/libsignon-qt-untrusted-tests \
-    "SSO API" "Security" "Component" "single-case"`
-`${HAVE_AEGIS} || echo "    -->"`
-
   </suite>
 
 
@@ -122,18 +117,15 @@ cat <<END
 
   <suite name="signond" domain="Accounts and SSO">
 
-`generate_test_set signond-tests/signon-tests \
+`generate_test_set signond-tests/tst_timeouts \
+    "SSO CORE" "FIXME" "FIXME" "single-case"`
+`generate_test_set signond-tests/tst_pluginproxy \
+    "SSO CORE" "FIXME" "FIXME" "single-case"`
+`generate_test_set signond-tests/tst_database \
+    "SSO CORE" "FIXME" "FIXME" "single-case"`
+`generate_test_set signond-tests/tst_access_control \
     "SSO CORE" "FIXME" "FIXME" "single-case"`
 
   </suite>
-
-
-  <suite name="signon-testpluginproxy" domain="Accounts and SSO">
-
-`generate_test_set pluginproxytest/testpluginproxy \
-    "FIXME" "FIXME" "FIXME" "single-case"`
-
-  </suite>
-
 </testdefinition>
 END
