@@ -1,5 +1,5 @@
 Name: signon-qt5
-Version: 8.50
+Version: 8.54
 Release: 2
 Summary: Single Sign On framework
 Group: System/Libraries
