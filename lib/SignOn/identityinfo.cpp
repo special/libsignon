@@ -96,6 +96,7 @@ const QString IdentityInfo::userName() const
 void IdentityInfo::setCaption(const QString &caption)
 {
     impl->m_caption = caption;
+    impl->m_isEmpty = false;
 }
 
 const QString IdentityInfo::caption() const
@@ -126,6 +127,7 @@ QString IdentityInfo::owner() const
 void IdentityInfo::setAccessControlList(const QStringList &accessControlList)
 {
     impl->m_accessControlList = accessControlList;
+    impl->m_isEmpty = false;
 }
 
 QStringList IdentityInfo::accessControlList() const
